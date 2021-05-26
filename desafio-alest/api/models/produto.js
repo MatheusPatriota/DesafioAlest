@@ -1,8 +1,9 @@
 class Produto{
-    constructor(nomeProduto, precoProduto, imagemProduto){
-        this.nomeProduto = nomeProduto;
-        this.precoProduto = precoProduto;
-        this.imagemProduto = imagemProduto;
+    constructor(id, nome, valor, imagem){
+        this.id = id;
+        this.nome = nome;
+        this.valor = valor;
+        this.imagem = imagem;
     }
 }
 
