@@ -21,17 +21,6 @@ class Card extends React.Component {
       })
   }
 
-  // update(key) {
-  //   axios.put(`http://localhost:8000/atualizar-produto/${key}`, this.state)
-  //     .then(response => {
-  //       this.setState({ produtos: response.data })
-  //     })
-  //     .catch(error => {
-  //       console.log(error)
-  //     })
-  // }
-
-
   delete(id) {
     // 
     console.log(id)
@@ -67,21 +56,17 @@ class Card extends React.Component {
                   </div>
                 </div>
                 {/* <form onSubmit={this.delete }> */}
-                  <button type="button" className="btn btn-info btn-actions m-auto"><i className="fa fa-edit" /></button>
-                  
+                <button type="button" className="btn btn-info btn-actions m-auto" ><i className="fa fa-edit" /></button>
+
                 {/* </form> */}
-                
+
                 <button type="button" className="btn btn-info btn-actions" onClick={() => this.delete(produto.id)}><i className="fa fa-trash" /></button>
-               
+
               </div>
             ) :
             null
         }
       </div>
-
-
-
-
 
     );
   }

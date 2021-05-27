@@ -30,6 +30,27 @@ class CadastroProduto extends React.Component {
         })
     }
 
+    // getProduto() {
+    //     axios.get("http://localhost:8000/produto/")
+    //       .then(response => {
+    //         this.setState({ produtos: response.data })
+    //       })
+    //       .catch(error => {
+    //         console.log(error)
+    //       })
+    //   }
+
+    update(key) {
+    axios.put(`http://localhost:8000/atualizar-produto/${this.props.id}`, this.state)
+      .then(response => {
+        this.setState({ produtos: response.data })
+      })
+      .catch(error => {
+        console.log(error)
+      })
+    }
+
+
     render() {
         const { nome, valor, imagem } = this.state;
         return (
@@ -70,7 +91,6 @@ class CadastroProduto extends React.Component {
                     </div>
                     <div className=" mt-2">
                         <button className="btn btn-success" type="submit" >Cadastrar Novo</button>
-                        <button className="btn btn-info btn-atualizar" type="submit">Atualizar Produto</button>
                     </div>
                 </form>
             </div>

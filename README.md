@@ -12,6 +12,13 @@ atualizar produtos.
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-green.svg)](https://opensource.org/licenses/)
 
+
+## Instalação 
+
+Instale as depedencias do Backend(/api) e do Frontend(/cliente)
+```bash 
+ npm install
+```
   
 ## Tecnologias Utilizadas 
 
@@ -21,6 +28,7 @@ atualizar produtos.
   Firebase/FireStore
   React JS
   BootStrap
+  Express JS
 ```
     
 ## Authors
@@ -30,6 +38,13 @@ atualizar produtos.
   
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/qJncF5c.png)
+![App Screenshot](https://i.imgur.com/b91LKQ3.png)
 
+
+
+  
+    
+## Agradecimento
+
+Agradeço a oportunidade de participar do processo seletivo de estagio da Alest
   
